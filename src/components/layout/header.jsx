@@ -11,9 +11,9 @@ export default function Header(){
           <h1 className="titulo-descricao">Lanchonete Bom Jesus</h1>
           <h2 className="subtitulo-descricao">Venha fazer parte dessa família também</h2>
           <div className="redes-sociais-header">
-            <a href="#"><i className="fa-brands fa-facebook"></i></a>
-            <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i className="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/groups/644118055631858"><i className="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://chat.whatsapp.com/2tvKy4oOyD4JTFFFajGkfI"><i className="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://www.instagram.com/lanchonetebomjesuspjpj/?utm_medium=copy_link"><i className="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </header>

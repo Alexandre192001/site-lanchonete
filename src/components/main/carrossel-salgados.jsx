@@ -1,54 +1,79 @@
-import React,{Fragment} from "react";
+import React,{Fragment,useRef} from "react";
 import '../css/carrossel-salgado.css';
 
-export default class Salgados extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state={
-      salgados: [
+export default function Salgados(){
+
+  const arraySalgados = [
+    
       { name:"Pastel",
-        value:"3,50",
+        value:"75,00",
         quantidade:"100",
-        img_url:"http://",
+        img_url:"https://entrega.pastelariavicosa.com.br/wp-content/uploads/2021/05/Mini-Pastel.png",
       },  
       { name:"Coxinha",
-        value:"3,50",
+        value:"75,00",
         quantidade:"100",
-        img_url:"http://",
+        img_url:"https://imagensemoldes.com.br/wp-content/uploads/2020/05/Coxinha-Catupiry-PNG.png",
       },  
       { name:"Risole",
-        value:"3,50",
+        value:"75,00",
         quantidade:"100",
-        img_url:"http://",
+        img_url:"https://www.acaciasalgados.com.br/images/travprqueijo-I.png",
       },  
       { name:"Enroladinho",
-        value:"3,50",
+        value:"75,00",
         quantidade:"100",
-        img_url:"http://",
+        img_url:"https://assets.instabuy.com.br/ib.item.image.big/b-20cb6f3d3b2d42db93dbc63fae6bf74f.png",
       },  
-      { name:"Pão de Forno",
-        value:"3,50",
+      { name:"Bolinha mista",
+        value:"75,00",
         quantidade:"100",
-        img_url:"http://",
-      },]};}
-  render() {
+        img_url:"https://levesabor.com.br/media/16/bolinha-de-queijo.png",
+      },
+    
+      { name:"Bolinho de Queijo",
+        value:"75,00",
+        quantidade:"100",
+        img_url:"https://imagensemoldes.com.br/wp-content/uploads/2020/05/Mini-Coxinha-PNG.png",
+      },
+  ]
+
+  const carousel = useRef(null)
+
+  const handleLeftClick = (e)=>{
+    e.preventDefault();
+    carousel.current.scrollLeft -= carousel.current.offsetWidth
+  }
+
+  const handleRigthClick = (e)=>{
+    e.preventDefault();
+    carousel.current.scrollLeft += carousel.current.offsetWidth
+  }
     return (
     <Fragment>
-    <section className="container-salgados">
+    <section className="container-salgados-wrapper">
       <div className="titulo-salgado">
         <h1>Salgados para festa</h1>
       </div>
-      {this.state.salgados.map((salgado)=>
+      <div className="container-salgados" ref={carousel} >
+      {arraySalgados.map((salgado)=>
         <div className="card-salgado">
           <img alt="img card-salgado" src={salgado.img_url}></img>
           <h1>{salgado.name}</h1>
           <p>Quantidade-{salgado.quantidade}</p>
-          <p>R$ {salgado.value}</p>
+          <p className='valor-produto'>R$ {salgado.value}</p>
         </div>)}
-
+      </div>
+      
+        <div className="seta-carrossel-salgados">
+          <button onClick={handleLeftClick} className="btn-left">
+            <img src="https://thypix.com/wp-content/uploads/blue-arrow-74-408x150.png"></img>
+          </button>
+          <button onClick={handleRigthClick} className="btn-rigth">
+            <img src="https://thypix.com/wp-content/uploads/blue-arrow-74-408x150.png"></img>
+          </button>
+        </div>
     </section>
     </Fragment>
     )
-   
-  }
 }

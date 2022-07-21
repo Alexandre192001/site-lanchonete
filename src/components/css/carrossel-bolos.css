@@ -10,10 +10,10 @@
   box-sizing: border-box;
 }
 
-.container-bolos{
+.container-bolos-wrapper{
   overflow: hidden;
   width: 100%;
-  height: 25rem;
+  height: 30rem;
   display: flex;
   flex: none;
   align-items: center;
@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.container-bolos .titulo-bolos{
+.container-bolos-wrapper .titulo-bolos{
   font-size:25px;
   position: absolute;
   top: .7rem;
@@ -40,15 +40,80 @@
   background-image: linear-gradient(to left,#003CB3,#6699FF,#003CB3);
 }
 
+.container-bolos{
+  display: flex;
+  overflow-y:hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 70%;
+  gap: 1rem;
+}
+
+.container-bolos::-webkit-scrollbar{
+  display: none;
+}
+
 .container-bolos .card-bolos{
   width: 20rem;
   border: solid 2px #6699ff;
-  height: 15rem;
+  height: 20rem;
   display: flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   border-radius:.4rem;
+  position: relative;
+  flex: none;
+}
+
+.card-bolos img{
+  width: 50%;
+}
+
+.card-bolos .valor-produto{
+  color: #003CB3;
+  font-size:18px;
+  position: absolute;
+  bottom:0;
+}
+
+.seta-carrossel-bolos{
+  position: absolute;
+  top: 13rem;
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+}
+
+.seta-carrossel-bolos button{
+  width: 5rem;
+  position: relative;
+  background-color: transparent;
+  border:none;
+  cursor:pointer;
+}
+
+.seta-carrossel-bolos button img{
+  width: 100%;
+  object-fit:cover;
+}
+
+.seta-carrossel-bolos .btn-left{
+  transform: rotateZ(180deg);
 }
 
 
+@media(max-width:470px){
+  .container-bolos-wrapper .titulo-bolos{
+    font-size: 20px;
+  }
+  .container-bolos{
+    width: 100%;
+  }
+  .container-bolos .card-bolos{
+    width: 100%;
+  }
+  .seta-carrossel-bolos{
+    bottom: -10rem;
+  }
+}

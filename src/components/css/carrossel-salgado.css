@@ -10,20 +10,20 @@
   box-sizing: border-box;
 }
 
-.container-salgados{
-  overflow: hidden;
+.container-salgados-wrapper{
   width: 100%;
-  height: 25rem;
+  overflow: hidden;
+  height: 30rem;
   display: flex;
-  flex: none;
   align-items: center;
   justify-content:center;
-  gap: 1rem;
+  color: #fff;
   font-family: var(--font-Josefin--);
   position: relative;
+  background-image: linear-gradient(to left,#003CB3,#6699FF,#003CB3);
 }
 
-.container-salgados .titulo-salgado{
+.container-salgados-wrapper .titulo-salgado{
   font-size:25px;
   position: absolute;
   top: .7rem;
@@ -37,18 +37,81 @@
   bottom:-.1rem;
   left: 0;
   height: .2rem;
-  background-image: linear-gradient(to left,#003CB3,#6699FF,#003CB3);
+  background-color: #fff;
+}
+
+.container-salgados{
+  display: flex;
+  overflow-y:hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 70%;
+  gap: 1rem;
+}
+
+.container-salgados::-webkit-scrollbar{
+  display: none;
 }
 
 .container-salgados .card-salgado{
   width: 20rem;
-  border: solid 2px #6699ff;
-  height: 15rem;
+  border: solid 2px #ffffff;
+  height: 20rem;
   display: flex;
+  position: relative;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   border-radius:.4rem;
+  flex: none;
 }
 
+.card-salgado img{
+  width: 60%;
+}
 
+.card-salgado .valor-produto{
+  color: #ebebeb;
+  font-size:30px;
+  position: absolute;
+  bottom:0;
+}
+
+.seta-carrossel-salgados{
+  position: absolute;
+  top: 13rem;
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+}
+
+.seta-carrossel-salgados button{
+  width: 5rem;
+  position: relative;
+  background-color: transparent;
+  border:none;
+  cursor:pointer;
+}
+
+.seta-carrossel-salgados button img{
+  width: 100%;
+  object-fit:cover;
+}
+
+.seta-carrossel-salgados .btn-left{
+  transform: rotateZ(180deg);
+}
+@media(max-width:470px){
+  .container-salgados-wrapper .titulo-salgado{
+    font-size: 20px;
+  }
+  .container-salgados{
+    width: 100%;
+  }
+  .container-salgados .card-salgado{
+    width: 100%;
+  }
+  .seta-carrossel-salgados{
+    bottom: -10rem;
+  }
+}
