@@ -1,4 +1,4 @@
-<h1>Lanchonete</h1>
+<h1>Lanchonete Bom Jesus</h1>
 <hr>
 <h2>Linguagens Utilizadas:</h2>
 
