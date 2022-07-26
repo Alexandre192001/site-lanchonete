@@ -59,8 +59,10 @@ export default function Salgados(){
       {arraySalgados.map((salgado)=>
         <div className="card-salgado">
           <img alt="img card-salgado" src={salgado.img_url}></img>
+          <div className="info-card">
           <h1>{salgado.name}</h1>
           <p>Quantidade-{salgado.quantidade}</p>
+          </div>
           <p className='valor-produto'>R$ {salgado.value}</p>
         </div>)}
       </div>

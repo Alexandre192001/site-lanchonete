@@ -43,8 +43,11 @@ export default function Bolos() {
       {ArrayBolos.map((bolos)=>
         <div className="card-bolos">
           <img alt="img card-bolos" src={bolos.img_url}></img>
+          
+          <div className="info-card">
           <h1>{bolos.name}</h1>
           <p className="valor-produto">R$ - {bolos.value}</p>
+          </div>
         </div>)}
       </div>
 

@@ -24,6 +24,7 @@ export default function Doces(){
           quantidade:"100",
           img_url:"https://s.cornershopapp.com/product-images/2141484.png?versionId=zjrx_KKmq5lMTVtPqJG49hNbYeE7pMmv",
         },  
+        
       ]
 
       const carousel = useRef(null)
@@ -51,8 +52,11 @@ export default function Doces(){
         <div className="card-doces">
           <img alt="img card-doces" src={doce.img_url}></img>
           <h1>{doce.name}</h1>
+          <div className="info-card">
           <p>Quantidade-{doce.quantidade}</p>
           <p className='valor-produto'>R$ {doce.value}</p>
+          </div>
+          
         </div>)}
       </div>
 

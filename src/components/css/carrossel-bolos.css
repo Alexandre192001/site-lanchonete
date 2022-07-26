@@ -58,6 +58,7 @@
   border: solid 2px #6699ff;
   height: 20rem;
   display: flex;
+  gap: 1rem;
   flex-direction:column;
   align-items:center;
   justify-content:center;
@@ -67,10 +68,10 @@
 }
 
 .card-bolos img{
-  width: 50%;
+  width: 10rem;
 }
 
-.card-bolos .valor-produto{
+.card-bolos .info-card .valor-produto{
   color: #003CB3;
   font-size:18px;
   position: absolute;
@@ -91,6 +92,7 @@
   background-color: transparent;
   border:none;
   cursor:pointer;
+  outline: none;
 }
 
 .seta-carrossel-bolos button img{

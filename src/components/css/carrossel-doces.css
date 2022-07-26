@@ -68,7 +68,7 @@
 }
 
 .card-doces img{
-  width: 60%;
+  width: 10rem;
 }
 
 .card-doces .valor-produto{
@@ -92,6 +92,7 @@
   background-color: transparent;
   border:none;
   cursor:pointer;
+  outline: none;
 }
 
 .seta-carrossel-doces button img{
