@@ -10,7 +10,7 @@
 
 <hr>
 <h2>⚜️Descriçao⚜️</h2>
-  Site desenvolvido para Lanchonete Bom Jesus.
+  Site desenvolvido para Lanchonete Bom Jesus, lanchonete de salgados, doces, bolos e etc.
 <hr>
 <h2>⚜️Funcionalidades:⚜️</h2>
   <ul>
