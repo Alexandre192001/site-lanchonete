@@ -36,6 +36,18 @@ export default function Salgados(){
         quantidade:"100",
         img_url:"https://imagensemoldes.com.br/wp-content/uploads/2020/05/Mini-Coxinha-PNG.png",
       },
+      { name:"Tortilete",
+        value:"75,00",
+        quantidade:"100",
+        img_url:"https://s3.us-west-2.amazonaws.com/whatsmenu/production/pareelanche/products/415050/timg20211216104958removebgpreviewpng",
+      },
+
+      { name:"Empada",
+      value:"75,00",
+      quantidade:"100",
+      img_url:"https://i0.wp.com/novo.deliciasdaprazeres.com.br/wp-content/uploads/2016/03/25.png?fit=269%2C269&ssl=1",
+      },
+      
   ]
 
   const carousel = useRef(null)

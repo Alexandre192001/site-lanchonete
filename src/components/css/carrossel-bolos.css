@@ -65,17 +65,25 @@
   border-radius:.4rem;
   position: relative;
   flex: none;
+  
 }
 
 .card-bolos img{
   width: 10rem;
 }
 
+.card-bolos .info-card{
+  text-align: center;
+  width:100%;
+}
+
 .card-bolos .info-card .valor-produto{
   color: #003CB3;
-  font-size:18px;
+  font-size:15px;
+  text-align: center;
   position: absolute;
-  bottom:0;
+  bottom:.5rem;
+  left: 2rem;
 }
 
 .seta-carrossel-bolos{
