@@ -1,123 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import "../../App.css";
 
-:root{
-  --font-Josefin--:"Josefin Sans";
-}
-
-*{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-.container-doces-wrapper{
+.container-doces-wrapper {
   overflow: hidden;
   width: 100%;
   height: 30rem;
   display: flex;
   flex: none;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   gap: 1rem;
   font-family: var(--font-Josefin--);
   position: relative;
 }
 
-.container-doces-wrapper .titulo-doces{
-  font-size:25px;
+.container-doces-wrapper .titulo-doces {
+  font-size: 25px;
   position: absolute;
-  top: .7rem;
+  top: 0.7rem;
   left: 1rem;
 }
 
 .titulo-doces h1::after {
-  content:"";
+  content: "";
   position: absolute;
   width: 3rem;
-  bottom:-.1rem;
+  bottom: -0.1rem;
   left: 0;
-  height: .2rem;
-  background-image: linear-gradient(to left,#003CB3,#6699FF,#003CB3);
+  height: 0.2rem;
+  background-image: linear-gradient(to left, #003cb3, #6699ff, #003cb3);
 }
 
-.container-doces{
+.container-doces {
   display: flex;
-  overflow-y:hidden;
+  overflow-y: hidden;
   overflow-x: scroll;
   scroll-behavior: smooth;
   width: 70%;
   gap: 1rem;
 }
 
-.container-doces::-webkit-scrollbar{
+.container-doces::-webkit-scrollbar {
   display: none;
 }
 
-.container-doces .card-doces{
+.container-doces .card-doces {
   width: 20rem;
   border: solid 2px #6699ff;
   height: 20rem;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   position: relative;
-  flex-direction:column;
-  align-items:center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  justify-content:center;
-  border-radius:.4rem;
+  justify-content: center;
+  border-radius: 0.4rem;
   flex: none;
 }
 
-.card-doces img{
+.card-doces img {
   width: 10rem;
 }
 
-.card-doces .valor-produto{
-  color: #003CB3;
-  font-size:30px;
+.card-doces .valor-produto {
+  color: #003cb3;
+  font-size: 30px;
   position: absolute;
-  bottom:0;
+  bottom: 0;
 }
 
-.seta-carrossel-doces{
+.seta-carrossel-doces {
   position: absolute;
   top: 13rem;
   display: flex;
   width: 100%;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.seta-carrossel-doces button{
+.seta-carrossel-doces button {
   width: 5rem;
   position: relative;
   background-color: transparent;
-  border:none;
-  cursor:pointer;
+  border: none;
+  cursor: pointer;
   outline: none;
 }
 
-.seta-carrossel-doces button img{
+.seta-carrossel-doces button img {
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-.seta-carrossel-doces .btn-left{
+.seta-carrossel-doces .btn-left {
   transform: rotateZ(180deg);
 }
 
-@media(max-width:470px){
-  .container-doces-wrapper .titulo-doces{
+@media (max-width: 470px) {
+  .container-doces-wrapper .titulo-doces {
     font-size: 20px;
   }
-  .container-doces{
+  .container-doces {
     width: 100%;
   }
-  .container-doces .card-doces{
+  .container-doces .card-doces {
     width: 100%;
   }
-  .seta-carrossel-doces{
+  .seta-carrossel-doces {
     bottom: -10rem;
   }
 }
-
-

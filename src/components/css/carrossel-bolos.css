@@ -1,129 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import "../../App.css";
 
-:root{
-  --font-Josefin--:"Josefin Sans";
-}
-
-*{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-.container-bolos-wrapper{
+.container-bolos-wrapper {
   overflow: hidden;
   width: 100%;
   height: 30rem;
   display: flex;
   flex: none;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   gap: 1rem;
   font-family: var(--font-Josefin--);
   position: relative;
 }
 
-.container-bolos-wrapper .titulo-bolos{
-  font-size:25px;
+.container-bolos-wrapper .titulo-bolos {
+  font-size: 25px;
   position: absolute;
-  top: .7rem;
+  top: 0.7rem;
   left: 1rem;
 }
 
 .titulo-bolos h1::after {
-  content:"";
+  content: "";
   position: absolute;
   width: 3rem;
-  bottom:-.1rem;
+  bottom: -0.1rem;
   left: 0;
-  height: .2rem;
-  background-image: linear-gradient(to left,#003CB3,#6699FF,#003CB3);
+  height: 0.2rem;
+  background-image: linear-gradient(to left, #003cb3, #6699ff, #003cb3);
 }
 
-.container-bolos{
+.container-bolos {
   display: flex;
-  overflow-y:hidden;
+  overflow-y: hidden;
   overflow-x: scroll;
   scroll-behavior: smooth;
   width: 70%;
   gap: 1rem;
 }
 
-.container-bolos::-webkit-scrollbar{
+.container-bolos::-webkit-scrollbar {
   display: none;
 }
 
-.container-bolos .card-bolos{
+.container-bolos .card-bolos {
   width: 20rem;
   border: solid 2px #6699ff;
   height: 20rem;
   display: flex;
   gap: 1rem;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  border-radius:.4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
   position: relative;
   flex: none;
-  
 }
 
-.card-bolos img{
+.card-bolos img {
   width: 10rem;
 }
 
-.card-bolos .info-card{
+.card-bolos .info-card {
   text-align: center;
-  width:100%;
+  width: 100%;
 }
 
-.card-bolos .info-card .valor-produto{
-  color: #003CB3;
-  font-size:15px;
+.card-bolos .info-card .valor-produto {
+  color: #003cb3;
+  font-size: 15px;
   text-align: center;
   position: absolute;
-  bottom:.5rem;
+  bottom: 0.5rem;
   left: 2rem;
 }
 
-.seta-carrossel-bolos{
+.seta-carrossel-bolos {
   position: absolute;
   top: 13rem;
   display: flex;
   width: 100%;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.seta-carrossel-bolos button{
+.seta-carrossel-bolos button {
   width: 5rem;
   position: relative;
   background-color: transparent;
-  border:none;
-  cursor:pointer;
+  border: none;
+  cursor: pointer;
   outline: none;
 }
 
-.seta-carrossel-bolos button img{
+.seta-carrossel-bolos button img {
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-.seta-carrossel-bolos .btn-left{
+.seta-carrossel-bolos .btn-left {
   transform: rotateZ(180deg);
 }
 
-
-@media(max-width:470px){
-  .container-bolos-wrapper .titulo-bolos{
+@media (max-width: 470px) {
+  .container-bolos-wrapper .titulo-bolos {
     font-size: 20px;
   }
-  .container-bolos{
+  .container-bolos {
     width: 100%;
   }
-  .container-bolos .card-bolos{
+  .container-bolos .card-bolos {
     width: 100%;
   }
-  .seta-carrossel-bolos{
+  .seta-carrossel-bolos {
     bottom: -10rem;
   }
 }

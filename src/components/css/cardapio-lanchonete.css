@@ -1,0 +1,73 @@
+@import "../../App.css";
+
+.sessao-lanchonete {
+  width: 100%;
+  height: 70rem;
+  background-image: linear-gradient(to left, #003cb3, #6699ff, #003cb3);
+}
+
+.title-lanchonete {
+  font-size: 30px;
+  position: relative;
+  font-family: var(--font-Josefin--);
+  padding: 1rem;
+  color: #ffff;
+}
+
+.title-lanchonete::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  bottom: 1rem;
+  background-color: #fff;
+}
+
+.card-cardapio{
+  display:flex;
+  color: rgb(255, 255, 255);
+  font-family: var(--font-Josefin--);
+  gap: 1rem;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.info-cardapio{
+  position: relative;
+  background-color: #1d1c27;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 15rem;
+  border-radius: .4rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1rem #000;
+}
+
+.info-cardapio img{
+  width: 20%;
+}
+
+@media(max-width:1471px){
+  .sessao-lanchonete{
+    height: 100rem;
+  }
+
+  .info-cardapio{
+    width: 40%;
+  }
+}
+
+
+@media(max-width:507px){
+  
+  .sessao-lanchonete{
+    height: 197rem;
+  }
+
+  .info-cardapio{
+    width: 90%;
+  }
+}

@@ -1,16 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import "../../App.css";
 
-:root{
-  --font-Josefin--:"Josefin Sans";
-}
-
-*{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-.sessao-header{
+.sessao-header {
   width: 100%;
   height: 35rem;
   position: relative;
@@ -21,39 +11,39 @@
   justify-content: center;
 }
 
-.sessao-header img{
+.sessao-header img {
   animation: animacao-img-fundo-header 8s infinite;
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .5;
+  opacity: 0.5;
   filter: blur(5px);
 }
 
 @keyframes animacao-img-fundo-header {
-  from{
-    transform: scale(1.4)
+  from {
+    transform: scale(1.4);
   }
-  to{
-    transform: scale(1)
+  to {
+    transform: scale(1);
   }
 }
 
-.sessao-header .descricao-header{
+.sessao-header .descricao-header {
   z-index: 2;
   color: white;
   text-align: center;
-  font-size:30px;
+  font-size: 30px;
   font-family: var(--font-Josefin--);
 }
 
-.descricao-header .redes-sociais-header{
+.descricao-header .redes-sociais-header {
   width: 100%;
-  justify-content:center;
+  justify-content: center;
   color: white;
   z-index: 1;
-  display:flex;
+  display: flex;
   gap: 1rem;
   margin: 1rem 0;
 }
@@ -62,8 +52,8 @@
   color: white;
 }
 
-@media(max-width:530px){
-  .sessao-header .descricao-header{
-    font-size:20px;
+@media (max-width: 530px) {
+  .sessao-header .descricao-header {
+    font-size: 20px;
   }
 }

@@ -14,7 +14,7 @@ export default function informacaoMain(){
           <div className="card">
           <i class="fa-brands fa-pix"></i>
           <p>Aceitamos pagamentos via Pix</p>
-          <p>Alexandre - 99336618</p>
+          <p>Alexandre - 82999336618</p>
           </div>
 
           <div className="card">

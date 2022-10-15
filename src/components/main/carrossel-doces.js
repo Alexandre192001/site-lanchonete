@@ -53,7 +53,7 @@ export default function Doces(){
           <img alt="img card-doces" src={doce.img_url}></img>
           <h1>{doce.name}</h1>
           <div className="info-card">
-          <p>Quantidade-{doce.quantidade}</p>
+          <p>Quantidade - {doce.quantidade}</p>
           <p className='valor-produto'>R$ {doce.value}</p>
           </div>
           

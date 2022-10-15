@@ -12,7 +12,10 @@ export default function Footer(){
       <div className="container-info-footer-wrapper">
 
         <div className="container-info-footer">
-          <i class="fa-solid fa-map"></i>
+          <div>
+            <i class="fa-solid fa-map"></i>
+          </div>
+          
           <p>Rua São Francisco;</p>
           <p>Número - 43;</p>
           <p>Paulo Jacinto/AL.</p>
