@@ -12,7 +12,7 @@
 <h2>⚜️Descriçao⚜️</h2>
   Site desenvolvido para Lanchonete Bom Jesus, lanchonete de salgados, doces, bolos e etc.
 <hr>
-<h2>⚜️Funcionalidades:⚜️</h2>
+<h2>⚜️Funcionalidades carrossel:⚜️</h2>
   <ul>
    <li>Seta Left - serve para puxar os elementos à esquerda;</li>
    <li>Seta Rigth - serve para puxar os elementos à direita.</li>
